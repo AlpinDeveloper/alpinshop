@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALPINSHOP | Hacker Style</title>
+<style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: url('https://wallpapercave.com/wp/wp2757874.gif') center/cover no-repeat;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+    header * {
+      position: relative;
+      z-index: 2;
+    }
+    header img {
+      width: 100px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ff00;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+    p {
+      color: #ccc;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .kategori {
+      background-color: #111;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ff00;
+    }
+    .kategori h2 {
+      border-bottom: 2px solid #00ff00;
+      padding-bottom: 10px;
+      margin-top: 0;
+      color: #00ff00;
+    }
+    .produk {
+      margin: 15px 0;
+      padding: 10px;
+      border-left: 4px solid #00ff00;
+      background-color: #1a1a1a;
+      border-radius: 4px;
+    }
+    .produk strong {
+      display: block;
+      font-size: 18px;
+      color: #0f0;
+    }
+    .produk span {
+      font-size: 14px;
+      color: #aaa;
+    }
+    button {
+      margin-top: 8px;
+      background-color: #00ff00;
+      color: #000;
+      padding: 10px 15px;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #33ff33;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #ccc;
+      font-size: 14px;
+    }
+  
+.produk.active-produk {
+  background-color: #222;
+  box-shadow: 0 0 10px #00ff00 inset;
+  transform: scale(1.02);
+}
+
+.produk {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.produk:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.produk {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.produk:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #00ff00;
+}
+.produk:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px #00ff00 inset;
+}
+</style>
+</head>
+<body>
+<header>
+<img alt="Logo ALPINSHOP" src="https://files.catbox.moe/6iz1qk.jpg"/>
+<h1>ALPINSHOP</h1>
+<p>Script • Panel • Bot • Hack Service</p>
+</header>
+<style>
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid #00ff00;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ff00;
+  text-align: center;
+  margin-top: 30px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ff00; }
+}
+</style>
+<section>
+<div style="text-align:center;margin-bottom:20px;">
+<label for="productSelect" style="font-size:16px;">🔽 Pilih Produk:</label><div style="font-size: 13px; color: #aaa; margin-top: 5px;">kebutuhan anda ada di sini</div><br/>
+<select id="productSelect" onchange="scrollToProduct()" style="padding:8px;border-radius:6px;font-weight:bold;background:#000;color:#0f0;border:1px solid #0f0;width:280px;"><option value="">🔽 Pilih Produk:</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script Simple">Script Trazinvictus (Bug) - Script Simple</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script Justin">Script Trazinvictus (Bug) - Script Justin</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script Tama">Script Trazinvictus (Bug) - Script Tama</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script Yilzi Shop">Script Trazinvictus (Bug) - Script Yilzi Shop</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script Pushkontak VIP">Script Trazinvictus (Bug) - Script Pushkontak VIP</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script MD">Script Trazinvictus (Bug) - Script MD</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script JPM">Script Trazinvictus (Bug) - Script JPM</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Reseller Create Script">Script Trazinvictus (Bug) - Reseller Create Script</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - Script Create SC Dan Website">Script Trazinvictus (Bug) - Script Create SC Dan Website</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - SELL NTED GEN 8">Script Trazinvictus (Bug) - SELL NTED GEN 8</option><option value="https://wa.me/62895417647232?text=Order%20Script Trazinvictus (Bug) - 25K%20(NO UPDATE)">Script Trazinvictus (Bug) - 25K - NO UPDATE</option><option value="https://wa.me/62895417647232?text=Order%20Panel Bot Privat - 3K - 10K (RAM 3GB - UNLIMITED)">Panel Bot Privat - 3K - 10K (RAM 3GB - UNLIMITED)</option><option value="https://wa.me/62895417647232?text=Order%20Reseller Panel Privat - 15K / Permanen, 12K / Bulan">Reseller Panel Privat - 15K / Permanen, 12K / Bulan</option><option value="https://wa.me/62895417647232?text=Order%20Benefit - VPS R16 C8 • GARANSI 25H • ADP 1 • ANTI RUSUH/DELAY/COLONG SC • THEMA">Benefit - VPS R16 C8 • GARANSI 25H • ADP 1 • ANTI RUSUH/DELAY/COLONG SC • THEMA</option><option value="https://wa.me/62895417647232?text=Order%20Nokos WhatsApp All Region - Harga tergantung region">Nokos WhatsApp All Region - Harga tergantung region</option><option value="https://wa.me/62895417647232?text=Order%20Murid Nokos VVIP - 12K">Murid Nokos VVIP - 12K</option><option value="https://wa.me/62895417647232?text=Order%20Murid Nokos VIP - 7K">Murid Nokos VIP - 7K</option><option value="https://wa.me/62895417647232?text=Order%20Benefit - FREE TUTOR VIDEO • BISA OPEN MURID • JUALAN NOKOS ALL REGION">Benefit - FREE TUTOR VIDEO • BISA OPEN MURID • JUALAN NOKOS ALL REGION</option><option value="https://wa.me/62895417647232?text=Order%20SC Justin V18 - Harga Pre Order%20(80k)">SC Justin V18 - Harga Pre Order - 80k</option><option value="https://wa.me/62895417647232?text=Order%20SC Justin V18 - Harga Rilis%20(150k)">SC Justin V18 - Harga Rilis - 150k</option><option value="https://wa.me/62895417647232?text=Order%20SC Justin V18 - Harga Buyer Vip Manen%20(120k)">SC Justin V18 - Harga Buyer Vip Manen - 120k</option><option value="https://wa.me/62895417647232?text=Order%20SC Justin V18 - Harga Reseller Sc Justin%20(140k)">SC Justin V18 - Harga Reseller Sc Justin - 140k</option><option value="https://wa.me/62895417647232?text=Order%20SC Justin V18 - Harga Sc Justin V17 Fase2%20(70k)">SC Justin V18 - Harga Sc Justin V17 Fase2 - 70k</option><option value="https://wa.me/62895417647232?text=Order%20SC Justin V18 - Harga Sc Justin V17 Fase3%20(400k)">SC Justin V18 - Harga Sc Justin V17 Fase3 - 400k</option><option value="https://wa.me/62895417647232?text=Order%20Sewa Bot Premium / Jaga GC - Harga &amp; Benefit tanyakan">Sewa Bot Premium / Jaga GC - Harga &amp; Benefit tanyakan</option><option value="https://wa.me/62895417647232?text=Order%20SC Multidevice - 10K">SC Multidevice - 10K</option><option value="https://wa.me/62895417647232?text=Order%20SC CPANEL Simpel - 10K">SC CPANEL Simpel - 10K</option><option value="https://wa.me/62895417647232?text=Order%20MURSUN - 10K">MURSUN - 10K</option><option value="https://wa.me/62895417647232?text=Order%20Jasa Rename SC - 15K">Jasa Rename SC - 15K</option><option value="https://wa.me/62895417647232?text=Order%20NOKOS ID - 7K">NOKOS ID - 7K</option><option value="https://wa.me/62895417647232?text=Order%20Jasa Pembuatan SC Sesuai Permintaan - Harga tergantung fitur &amp; permintaan">Jasa Pembuatan SC Sesuai Permintaan - Harga tergantung fitur &amp; permintaan</option><option value="https://wa.me/62895417647232?text=Order%20Konsultasi IG, WA, TikTok, FB - 🧠 Blokir, hilang, hack, lupa akses">Konsultasi IG, WA, TikTok, FB - 🧠 Blokir, hilang, hack, lupa akses</option><option value="https://wa.me/62895417647232?text=Order%20Hackback Akun Instagram - Harga sesuai kasus">Hackback Akun Instagram - Harga sesuai kasus</option><option value="https://wa.me/62895417647232?text=Order%20Sadap WhatsApp - Harga sesuai target">Sadap WhatsApp - Harga sesuai target</option><option value="https://wa.me/62895417647232?text=Order%20Vps Digital Ocean High Quality - Ram 1 Core 1%20(Rp23.000)">Vps Digital Ocean High Quality - Ram 1 Core 1 - Rp23.000</option><option value="https://wa.me/62895417647232?text=Order%20Vps Digital Ocean High Quality - Ram 2 Core 1%20(Rp27.000)">Vps Digital Ocean High Quality - Ram 2 Core 1 - Rp27.000</option><option value="https://wa.me/62895417647232?text=Order%20Vps Digital Ocean High Quality - Ram 2 Core 2%20(Rp30.000)">Vps Digital Ocean High Quality - Ram 2 Core 2 - Rp30.000</option><option value="https://wa.me/62895417647232?text=Order%20Vps Digital Ocean High Quality - Ram 4 Core 2%20(Rp50.000)">Vps Digital Ocean High Quality - Ram 4 Core 2 - Rp50.000</option><option value="https://wa.me/62895417647232?text=Order%20Vps Digital Ocean High Quality - Ram 8 Core 4%20(Rp60.000)">Vps Digital Ocean High Quality - Ram 8 Core 4 - Rp60.000</option><option value="https://wa.me/62895417647232?text=Order%20Vps Digital Ocean High Quality - Ram 16 Core 4%20(Rp70.000)">Vps Digital Ocean High Quality - Ram 16 Core 4 - Rp70.000</option><option value="https://wa.me/62895417647232?text=Order%20Vps Digital Ocean High Quality - #-Nego? No Garansi!!!">Vps Digital Ocean High Quality - #-Nego? No Garansi!!!</option><option value="https://wa.me/62895417647232?text=Order%20Akun Digital Ocean - 3 Droplet Vcc%20(Rp100.000)">Akun Digital Ocean - 3 Droplet Vcc - Rp100.000</option><option value="https://wa.me/62895417647232?text=Order%20Akun Digital Ocean - 10 Droplet Vcc%20(Rp150.000)">Akun Digital Ocean - 10 Droplet Vcc - Rp150.000</option><option value="https://wa.me/62895417647232?text=Order%20Akun Digital Ocean - 10 Droplet Paypal%20(Rp180.000)">Akun Digital Ocean - 10 Droplet Paypal - Rp180.000</option></select>
+<a href="https://wa.me/62895417647232?text=Halo%20ALPINSHOP%2C%20saya%20mau%20order" target="_blank"><button>Pesan Sekarang</button></a></div>
+<div class="kategori" id="scriptBug">
+<h2>SCRIPT BUG 👿</h2>
+<div class="produk"><strong>Script Trazinvictus (Bug)</strong><span>
+    • Script Simple<br/>
+    • Script Justin<br/>
+    • Script Tama<br/>
+    • Script Yilzi Shop<br/>
+    • Script Pushkontak VIP<br/>
+    • Script MD<br/>
+    • Script JPM<br/>
+    • Reseller Create Script<br/>
+    • Script Create SC Dan Website
+    <br/><br/><strong>SELL NTED GEN 8</strong><br/><span>25K : NO UPDATE</span></span></div>
+</div>
+<div class="kategori" id="panelBot">
+<h2>PANEL BOT PRIVAT 📡</h2>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Panel Bot Privat</strong><span>3K - 10K (RAM 3GB - UNLIMITED)</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Reseller Panel Privat</strong><span>15K / Permanen, 12K / Bulan</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Benefit</strong><span>• VPS R16 C8 • GARANSI 25H • ADP 1 • ANTI RUSUH/DELAY/COLONG SC • THEMA</span></div>
+</div>
+<div class="kategori" id="produkLain">
+<h2>PRODUK LAINNYA ☘️</h2>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Nokos WhatsApp All Region</strong><span>Harga tergantung region</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Murid Nokos VVIP</strong><span>12K</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Murid Nokos VIP</strong><span>7K</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Benefit</strong><span>• FREE TUTOR VIDEO • BISA OPEN MURID • JUALAN NOKOS ALL REGION</span></div>
+</div>
+<div class="kategori" id="scJustinV18">
+<h2>𝗢𝗣𝗘𝗡 𝗣𝗢 𝗦𝗖 𝗝𝗨𝗦𝗧𝗜𝗡 𝗩𝟭𝟴`</h2>
+<div class="produk">
+<strong>SC Justin V18</strong>
+<span>
+      💸Harga Pre Order : 80k<br/>
+      💸Harga Rilis : 150k<br/>
+      💸Harga Buyer Vip Manen : 120k<br/>
+      💸Harga Reseller Sc Justin : 140k<br/>
+      💸Harga Sc Justin V17 Fase2 : 70k<br/>
+      💸Harga Sc Justin V17 Fase3 : 400k
+    </span>
+</div>
+</div>
+<div class="kategori" id="lainnya">
+<h2>LAINNYA</h2>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Sewa Bot Premium / Jaga GC</strong><span>Harga &amp; Benefit tanyakan</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>SC Multidevice</strong><span>10K</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>SC CPANEL Simpel</strong><span>10K</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>MURSUN</strong><span>10K</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Jasa Rename SC</strong><span>15K</span><br/></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>NOKOS ID</strong><span>7K</span><br/></div>
+<div class="produk">
+<strong>Jasa Pembuatan SC Sesuai Permintaan</strong>
+<span>Harga tergantung fitur &amp; permintaan</span>
+</div>
+</div>
+<script>
+    function scrollToProduct() {
+      const selected = document.getElementById("productSelect").value;
+      if (selected && selected.startsWith("https://wa.me/")) {
+        window.open(selected, "_blank");
+      }
+    }
+    </script>
+</section>
+<div class="kategori" id="layananKhusus">
+<h2>LAYANAN KHUSUS 🔐</h2>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Konsultasi IG, WA, TikTok, FB</strong><span>🧠 Blokir, hilang, hack, lupa akses<br/>• Akun Gmail / Google</span></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Hackback Akun Instagram</strong><span>Harga sesuai kasus</span></div>
+<div class="produk" onclick="this.classList.toggle('active-produk');" style=";cursor:pointer;"><strong>Sadap WhatsApp</strong><span>Harga sesuai target</span></div>
+</div>
+<div class="kategori" id="vpsDigitalOcean2">
+<h2>VPS DIGITAL OCEAN ⛈️</h2>
+<div class="produk">
+<strong>Vps Digital Ocean High Quality</strong>
+<span>
+      ┊□ Ram 1 Core 1 : Rp23.000<br/>
+      ┊□ Ram 2 Core 1 : Rp27.000<br/>
+      ┊□ Ram 2 Core 2 : Rp30.000<br/>
+      ┊□ Ram 4 Core 2 : Rp50.000<br/>
+      ┊□ Ram 8 Core 4 : Rp60.000<br/>
+      ┊□ Ram 16 Core 4 : Rp70.000<br/>
+      ┊□ #-Nego? No Garansi!!!
+    </span>
+</div>
+</div>
+<div class="kategori" id="akunDigitalOcean">
+<h2>AKUN DIGITAL OCEAN 🌊</h2>
+<div class="produk">
+<strong>Akun Digital Ocean</strong>
+<span>
+      ┊□ 3 Droplet Vcc : Rp100.000<br/>
+      ┊□ 10 Droplet Vcc : Rp150.000<br/>
+      ┊□ 10 Droplet Paypal : Rp180.000
+    </span>
+</div>
+</div>
+<footer>
+<div class="pembayaran" style="text-align:center; margin-top:40px;">
+<h2 style="color:#00ff00;">Metode Pembayaran</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px;">
+<div style="text-align: center; width: 80px;">
+<img alt="Dana" src="https://files.catbox.moe/9ozprx.jpg" style="border-radius: 8px;" width="40"/><br/>
+<span style="color:#0f0;">Dana</span>
+</div>
+<div style="text-align: center; width: 80px;">
+<img alt="OVO" src="https://files.catbox.moe/bb5ar6.jpeg" style="border-radius: 8px;" width="40"/><br/>
+<span style="color:#0f0;">OVO</span>
+</div>
+<div style="text-align: center; width: 80px;">
+<img alt="GoPay" src="https://files.catbox.moe/atykap.png" style="border-radius: 8px;" width="40"/><br/>
+<span style="color:#0f0;">GoPay</span>
+</div>
+<div style="text-align: center; width: 80px;">
+<img alt="BRI" src="https://files.catbox.moe/kyhl5z.png" style="border-radius: 8px;" width="40"/><br/>
+<span style="color:#0f0;">BRI</span>
+</div>
+<div style="text-align: center; width: 80px;">
+<img alt="BCA" src="https://files.catbox.moe/91nc77.png" style="border-radius: 8px;" width="40"/><br/>
+<span style="color:#0f0;">BCA</span>
+</div>
+</div>
+</div>
+<div style="text-align:center; margin-top:20px; font-size:13px; color:#aaa;">
+</div>
+<div style="text-align:center; margin-top:20px; font-size:13px; color:#aaa;">
+<p>👤 Owner: <strong><a href="https://instagram.com/_alvincandra" style="color:#0f0;" target="_blank">@_alvincandra</a></strong></p>
+<p>👨‍💻 Dev: <strong><a href="https://instagram.com/alpin_developer" style="color:#0f0;" target="_blank">@alpin_developer</a></strong></p>
+</div>
+</footer>
+<style>
+  #popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.85);
+  }
+  #popup .content {
+    background: #111;
+    border: 2px solid #0f0;
+    color: #0f0;
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #popup button {
+    margin: 10px 5px;
+    background-color: #00ff00;
+    color: #000;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+<div id="popup">
+<div class="content">
+<h3>Order via:</h3>
+<button onclick="location.href='https://wa.me/62895417647232?text=Halo%20ALPINSHOP%2C%20saya%20mau%20order';">WhatsApp</button>
+<button onclick="alert('Silakan scan QR Dana yang tersedia.')">Dana QR</button>
+<br/><br/>
+<button onclick="closePopup()">Tutup</button>
+</div>
+</div>
+<script>
+document.querySelectorAll('.produk').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active-produk');
+  });
+});
+</script></body>
+</html>
